@@ -19,7 +19,7 @@ from hmr4d.utils.net_utils import moving_average_smooth
 class Tracker:
     def __init__(self) -> None:
         # https://docs.ultralytics.com/modes/predict/
-        self.yolo = YOLO('yolo11x-pose.pt')
+        self.yolo = YOLO('yolov8x-pose.pt')
 
     def track(self, video_path):
         track_history = []
